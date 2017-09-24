@@ -1,0 +1,64 @@
+*{font-family: 'Open Sans', sans-serif;font-size:14px;}
+
+h3#main{ font-family: 'Lobster', sans-serif; color: #bada55;text-align:center;}
+h6#main{text-align:center;font-size:18px;}
+
+
+textarea{
+	height:430px!important;
+	width:400px;
+	padding:10px;
+	resize:none;
+	font-size: 13px;
+	overflow-x:hidden;
+}
+
+
+
+#output{
+	float:right;
+	height:413px!important;
+	width:400px;
+	border:1px solid #e2e2e2;
+	border-radius:5px;
+	overflow: scroll;
+	padding:7px;
+	
+	
+
+}
+
+footer{text-align:center;
+		color:#acacac;}
+
+footer a{color:#bada44;}
+
+footer a:hover{text-decoration:underline;font-style: italic; color:#bada44;}
+
+@media screen and (max-width: 1000px) {
+    textarea,#output{
+    	width:350px;
+    }
+    #output{float:none;}
+
+ @media screen and (max-width: 900px) {
+    textarea,#output{
+    	width:325px;
+    }
+
+ @media screen and (max-width: 800px) {
+    textarea,#output{
+    	width:280px;
+    }
+
+  @media screen and (max-width: 695px) {
+    textarea,#output{
+    	width:250px;
+    }
+   @media screen and (max-width: 635px) {
+    textarea,#output{
+    	width:225px;
+    }
+
+
+}

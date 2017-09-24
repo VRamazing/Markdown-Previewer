@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Previewer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lobster" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class = "container" id="app">
+
+    <h3 id = "main">Markdown Previewer</h3>
+    <div class="row">
+
+      <div class="one-half column" id = "input">
+        <h6 id = "main">Input</h6>
+        <textarea v-model="input" placeholder = "Enter your Markdown here"></textarea>
+      </div>
+
+      <div class="one-half column">
+        <h6 id = "main">Output</h6>
+        <div id = 'output'>
+            <p style = "display:hidden">{{convertToHtml}}</p>
+        </div>
+      </div>
+
+    </div>  
+
+  </div>
+    
+  <footer>by <a href = "http://www.vigneshramesh.in">Vignesh Ramesh</a></footer>     
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
